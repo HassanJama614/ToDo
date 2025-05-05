@@ -2,7 +2,7 @@
 import React from 'react';
 import AddTask from './components/AddTask';
 import ListTask from './components/ListTask';
-import './App.css'; // You can add some basic styling here
+import './App.css'; 
 
 function App() {
   return (
