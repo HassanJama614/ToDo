@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import AddTask from './components/AddTask';
+import ListTask from './components/ListTask';
+import './App.css'; // You can add some basic styling here
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: '30px', maxWidth: '600px', margin: 'auto' }}>
+      <h1>My Redux ToDo App</h1>
+      <AddTask />
+      <ListTask />
     </div>
   );
 }
